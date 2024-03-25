@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Video </title>
+        <style type="text/css">
+           /* Where navigation bar begins*/
+            nav ul li{
+                display: inline-block;
+                margin-left: 20px;
+                font-size: 40px;
+              } a{text-decoration: none;color: black;}
+              body {
+                  font-family: Arial, sans-serif;
+                  margin: 0;
+                  padding: 0;
+              }
+              header {
+                  background-color: #f1f1f1;
+                  padding: 20px;
+              }
+              nav{
+                  display: flex;
+                  justify-content: 20px;
+              }
+              nav a{
+                  text-decoration: none;
+                  color: black;
+              }
+              .dropdown {
+                  position: right;
+                  display: inline-block;
+                  direction: rtl;
+              }
+              .dropdown-content{
+                  display: none;
+                  position: absolute;
+                  background-color: #f1f1f1;
+                  min-width: 160px;
+                  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0,0.2);
+                  z-index: 1;
+              }
+              .dropdown-content a{
+                  color: black;
+                  padding: 12px 16px;
+                  text-decoration: none;
+                  display: block;
+              }
+              .dropdown-content a:hover{
+                  background-color: #ddd;
+              }
+              .dropdown:hover .dropdown-content{
+                  display: block;
+              }
+              /* End of the navigation bar*/
+              section{
+                  padding: 20px;
+                  border-bottom: 1px solid #ddd;
+              }
+              footer{
+                  text-align: center;
+                  padding: 20px;
+                  background-color: #f1f1f1;
+              }
+              header nav ul li{
+                  display: inline-block;
+                  float: left;
+                  font-size: 30px;
+                  margin-left: 10px;
+              }
+              .dropdown .dropdown-content a{
+                  font-size: 30px;
+                  margin-left: 10px;
+              }
+              a:hover, .dropdown-content {
+                  color: skyblue;
+              }
+              nav ul li{
+                display: inline-block;
+                margin-left: 20px;
+                font-size: 40px;
+              } a{text-decoration: none;color: black;}
+              /*The End of nav ul li*/
+              main {
+                color:black;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            main section {
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+                align-items: flex-start;
+            }
+            /* spacing in tutorial on the web pagess */
+            main video {
+                margin-bottom: 20px; 
+            }
+            /* Put the first Tutorial at the left of website page */
+            main section:first-child video {
+                align-self: flex-start; 
+            }
+        </style>
+    </head>
+    <body>
+        <header style="font-family: 'Arial Rounded MT Bold'; font-size: 22px;">
+            <div style="display: flex; align-items: center;">
+                <div style="display: flex; flex: 1;">
+                    <nav>
+                        <ul>
+                            <li><a href="Home.html" target="_blank">Home</a></li>
+                            <li><a href="About us.html" target="_blank">About</a></li>
+                            <li><a href="Contact us.html" target="_blank">Contact</a></li>
+                            <li><a href="Table.html" target="_blank">Table</a></li>
+                            <li><a href="Form.html" target="_blank">Form</a></li>
+                            <li><a href="List.html" target="_blank">List</a></li>
+                            <li><a href="Audio.html" target="_blank">Audio</a></li>
+                            <li><a href="Video.html" target="_blank">Video</a></li>
+                            <li><a href="Any.html" target="_blank">Any</a></li>
+                            <li class="dropdown"><a href="setting.html">Setting</a>
+                            <div class="dropdown-content">
+                                <a href="Login.html">Login</a>
+                                <a href="register.html">Register</a>
+                            </div>
+                        </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main style="margin-left: 100px;">
+            <br>
+            <br><br>
+            <!--The left side bar of video on the website-->
+            <section>
+                <video width="600" height="420" controls>
+                    <source src="./Shot on iPhone 15 Pro _ Cinematic Mode 4K.mp4" type="video/mp4">
+                    Your browser does not support the video tag
+                </video>
+            </section>
+            <!--The right side Bar of video on the website-->
+            <section style="margin-top: 50px;">
+                <video width="400" height="220" controls>
+                    <source src="./Shot on iPhone 15 Pro _ Cinematic Mode 4K.mp4" type="video/mp4">
+                    Your browser does not support the video tag
+                </video>
+                <caption>Film making with iPhone 15 Pro</caption><br><br><br>
+                <video width="400" height="220" controls>
+                    <source src="./Shot on iPhone 15 Pro _ Cinematic Mode 4K.mp4" type="video/mp4">
+                    Your browser does not support the video tag
+                </video>
+                <caption>Film making with iPhone 15 Pro with 4K Mode</caption><br><br><br>
+                <video width="400" height="220" controls>
+                    <source src="./Shot on iPhone 15 Pro _ Cinematic Mode 4K.mp4" type="video/mp4">
+                    Your browser does not support the video tag
+                </video>
+                <caption>Content creating with iPhone 15 Pro</caption><br><br><br>
+                <video width="400" height="220" controls>
+                    <source src="./Shot on iPhone 15 Pro _ Cinematic Mode 4K.mp4" type="video/mp4">
+                    Your browser does not support the video tag
+                </video>
+                <caption>iPhone 15 Pro Max is Better for Film Making</caption><br><br><br>
+            </section>
+        </main>
+        </br>
+      <footer><center>Exercises 4 (MultiMedia) &copy, 2024 &reg</center></footer>
+    </body>
+</html>
